@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Verificación KYC</title>
+</head>
+<body>
+	<h1>Verificación KYC</h1>
+	<p>Por favor, complete la siguiente información para verificar su identidad:</p>
+	<form action="verificar.php" method="post">
+		<label for="nombre">Nombre completo:</label>
+		<input type="text" id="nombre" name="nombre" required><br><br>
+		<label for="documento">Tipo de documento:</label>
+		<select id="documento" name="documento" required>
+			<option value="">Seleccione un tipo de documento</option>
+			<option value="dni">DNI</option>
+			<option value="pasaporte">Pasaporte</option>
+			<option value="carnet">Carnet de extranjería</option>
+		</select><br><br>
+		<label for="numero_documento">Número de documento:</label>
+		<input type="text" id="numero_documento" name="numero_documento" required><br><br>
+		<label for="foto_documento">Foto del documento:</label>
+		<input type="file" id="foto_documento" name="foto_documento" required><br><br>
+		<input type="submit" value="Verificar">
+	</form>
+</body>
+</html>
